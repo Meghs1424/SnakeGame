@@ -31,8 +31,8 @@ void draw()
   for(int i=1;i<Height-1;i++){
     for(int j=0;j<Width;j++){
       //print snake head
-      if(i==x && j==y)
-        printf("O");
+      printf("O");
+      }
       else if(i==fx && j==fy)
         printf("@");
       else{
@@ -99,7 +99,11 @@ void logic()
   if(x==fx && y==fy){
     score+=10;
     fx = rand() % Height;
+    if(fx<=0 || fx>=Height-1)
+      fx=Height/2;
     fy = rand() % Width;
+    if(fy<=0 || fy>=Width-1)
+      fy=Width/2;
   }
   if(x==0 || x==Height || y==0 || y==Width)
     GameOver=true;
