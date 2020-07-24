@@ -31,7 +31,8 @@ void draw()
   for(int i=1;i<Height-1;i++){
     for(int j=0;j<Width;j++){
       //print snake head
-      printf("O");
+      if(i==x && j==y){
+        printf("O");
       }
       else if(i==fx && j==fy)
         printf("@");
