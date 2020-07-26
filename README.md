@@ -1,2 +1,2 @@
 # SnakeGame
-A simple game applicable on MacOS X Terminal
+A simple game implemented on MacOS X Terminal
