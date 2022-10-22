@@ -1,2 +1,1 @@
-# SnakeGame
-A simple game implemented on MacOS X Terminal
+# Basic Snake Game using C++ (for MacOS)
